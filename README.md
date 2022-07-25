@@ -1,3 +1,9 @@
+![image](https://user-images.githubusercontent.com/39937850/180884398-1a04fefd-f12e-4ffd-989f-3ebe44c6079f.png)
+
+
+
+
+
 Prototipo2 : Fotoresistencia con anillo led Neopixel
 ![image](https://user-images.githubusercontent.com/39937850/180133779-895e5269-ef30-4a5d-95be-47807729d657.png)
 
