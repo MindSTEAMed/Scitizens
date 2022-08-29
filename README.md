@@ -1,6 +1,6 @@
 
-SENSOR DE HUMEDAD DE SUELO CAPACITIVO - DHT11 - BLYNK
-![image](https://user-images.githubusercontent.com/39937850/187279557-a36f2ccd-dfd0-4467-a74a-c75c8038ef29.png)
+**SENSOR DE HUMEDAD DE SUELO CAPACITIVO - DHT11 - BLYNK
+**![image](https://user-images.githubusercontent.com/39937850/187279557-a36f2ccd-dfd0-4467-a74a-c75c8038ef29.png)
 
 
 
