@@ -1,4 +1,19 @@
 
+
+RELAY DE DOS CANALES, CONECTADO A BOMBA SUMERGIBLE DE 120L/S, Y SENSOR CAPACITIVO
+
+
+
+
+![image](https://user-images.githubusercontent.com/39937850/188506765-31e38b35-80cf-4b3b-82c6-ff758dddaa46.png)
+
+
+
+
+
+
+
+
 **SENSOR DE HUMEDAD DE SUELO CAPACITIVO - DHT11 - BLYNK
 **![image](https://user-images.githubusercontent.com/39937850/187279557-a36f2ccd-dfd0-4467-a74a-c75c8038ef29.png)
 
