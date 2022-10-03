@@ -1,5 +1,36 @@
 
 
+SENSOR ULTRASÓNICO, ACOPLADO A PROTOTIPO DE TARJETA NODEMCU CON BOMBA SUMERGIBLE Y SENSOR DE HUMEDAD
+
+![image](https://user-images.githubusercontent.com/39937850/193681795-b9a0c2a4-90dc-470d-b0aa-f99fef4ea6ca.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 RELAY DE DOS CANALES, CONECTADO A BOMBA SUMERGIBLE DE 120L/S, Y SENSOR CAPACITIVO
 
 
