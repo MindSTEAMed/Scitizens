@@ -1,0 +1,58 @@
+#include <BlynkSimpleEsp8266.h>
+
+#include <OneWire.h>
+#include <DallasTemperature.h>
+#define BLYNK_PRINT Serial    // Comment this out to disable prints and save space
+
+
+/* WiFi credentials */
+char ssid[] = "TUWIFI";
+char pass[] = "TUCONTRASEÑA";
+char auth[] = "TUTOKEN";  
+BlynkTimer timer; 
+
+
+
+#define ONE_WIRE_BUS 2 // DS18B20 on arduino pin2 corresponds to D4 on physical board "D4 pin on the ndoemcu Module"
+  ONEWIRE(ONE_WIRE_BUS); 
+DallasTemperature DS18B20(&oneWire);
+float temp;
+float Fahrenheit=0;
+
+int caca;
+void setup() 
+{
+  Serial.begin(9600);
+  Serial.println("Reading from the sensor ...");
+  Blynk.begin(auth, ssid, pass,"blynk.mindsteam.cl", 8080);
+  DS18B20.begin();
+  timer.setInterval(1000L, getSendData);
+  delay(1000);
+}
+
+void loop() 
+{
+  timer.run(); // Initiates SimpleTimer
+  Blynk.run();
+  caca= analogRead(A0);
+  caca = map(caca, 0, 1023, 0, 100);
+  Blynk.virtualWrite(V0, caca);
+  Serial.print("Moisture : ");
+  Serial.print(caca);
+  Serial.print("\n");
+  delay(1000);
+}
+
+/***************************************************
+ * Send Sensor data to Blynk
+ **************************************************/
+void getSendData()
+{
+  DS18B20.requestTemperatures(); 
+  temp = DS18B20.getTempCByIndex(0); // Celcius
+   Fahrenheit = DS18B20.toFahrenheit(temp); // Fahrenheit
+  Serial.println(temp);
+  Serial.println(Fahrenheit);
+  Blynk.virtualWrite(V3, temp); //virtual pin V3
+  Blynk.virtualWrite(V4, Fahrenheit); //virtual pin V4
+}
